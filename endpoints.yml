@@ -1,0 +1,13 @@
+kind: "Endpoints"
+apiVersion: "v1"
+metadata:
+  name: "external-mongo"
+subsets:
+  -
+    addresses:
+      -
+        ip: "192.168.64.1"
+    ports:
+      -
+        port: 27017
+        name: "mongo"

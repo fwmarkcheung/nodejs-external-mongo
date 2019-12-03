@@ -1,0 +1,13 @@
+kind: "Service"
+apiVersion: "v1"
+metadata:
+  name: "external-mongo"
+spec:
+  ports:
+    -
+      name: "mongo"
+      protocol: "TCP"
+      port: 27017
+#     targetPort: 3306
+      nodePort: 0
+  selector: {}
